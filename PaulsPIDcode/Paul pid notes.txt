@@ -1,0 +1,35 @@
+	static private double KP_STRAIGHT = 0.4 ;
+	static private double KD_STRAIGHT = 3.5 ;
+    
+    static private double KP_DRIFT = 0.015 ;
+	
+    static private double KP_ROT = 0.010 ; // 0.015 ;	
+	static private double KD_ROT = 0.017 ;        
+
+	static private double BBANG_UPPER_THRESH = 0.4 ; 
+	static private double BBANG_LOWER_THRESH = 0.01 ;
+            
+	static private double MOVE_RATE = 0.15 ;
+    // 3 ft/sec*.05 sec/update = 0.15 ft/update = 1.8 in/update    
+	// static private double MOVE_RATE = 0.3 ;    // 6 ft/sec max ramp up        
+        
+	static final private double ABS_TOL_IN = 1.0 ;  
+	static final private double ABS_TOL_DEG = 1.0 ;
+	
+	static final private double WHEEL_RADIUS_IN = 2.0 ;
+	static final private double LEFT_ENCODER_PPR = 360 ;  // 1440 ;  
+	static final private double RIGHT_ENCODER_PPR = 250 ; // 1000 ;        
+
+	static final private double LEFT_ENCODER_IN_PER_PULSE = 2.0*Math.PI*WHEEL_RADIUS_IN/LEFT_ENCODER_PPR ;
+	static final private double RIGHT_ENCODER_IN_PER_PULSE = 0.05084746 ;   // might work better than the calc'd?
+
+	static final private double DRIVETRAIN_RADIUS_IN = 14 ;         
+
+    private DriveMode mDriveMode = DriveMode.TELE ;
+    
+    
+    
+    
+    
+    
+            
